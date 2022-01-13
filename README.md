@@ -1,1 +1,1 @@
-# Restaurant_Rating_prediction_app
+# Zomato Restaurant Rating prediction app
