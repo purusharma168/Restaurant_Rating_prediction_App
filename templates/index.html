@@ -2,13 +2,14 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Welcome To Zomato Rating Prediction App</title>
-    <h1>Created by Puru Sharma</h1>
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Zomato Rating Prediction App</title>
+
+<!--  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
+<!--<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>-->
+<!--<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>-->
+<!--<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>-->
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
 
 </head>
 
@@ -22,7 +23,7 @@ body {
 </style>
 
  <div class="login">
-   <h1>Predict Zomato Restaurant Ratings</h1>
+   <h1>Zomato Restaurant Ratings Prediction App</h1>
      <!-- Main Input For Receiving Query to our ML -->
      <form action="{{ url_for('predict')}}"method="post">
 
@@ -39,9 +40,9 @@ body {
             </td>
             </tr>
             <tr>
-                <td>Table Booking</td>
+                <td>Book Table</td>
                 <td>
-                    <select name="Table_Booking" id="Table_Booking">
+                    <select name="Book_Table" id="Book_Table">
                         <option>Select one</option>
                         <option value="0">No</option>
                         <option value="1">Yes</option>
@@ -261,10 +262,12 @@ body {
                         <option value="4">Dine-out</option>
                         <option value="5">Drinks & nightlife</option>
                         <option value="6">Pubs and bars</option>
+
                     </select>
                 </td>
             </tr>
-            <tr>
+      </table>
+</form>
 
 
 <!--        -->
@@ -277,15 +280,17 @@ body {
 <!--        <input type="text" name="Cost" placeholder="Cost" required="required" />-->
 
 
-        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
 
-</form>
-   <br>
-   <br>
+
+
+
+
+       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
    {{ prediction_text }}
 
  </div>
 
-
+ <h5>Created by Puru Sharma</h5>
 </body>
 </html>
