@@ -25,8 +25,8 @@ ET_Model.fit(x_train, y_train)
 y_predict = ET_Model.predict(x_test)
 
 import pickle
-
+#please use this file to upload for saving model file
 # # Saving model to disk
-pickle.dump(ET_Model, open('model.pkl', 'wb'))
-model = pickle.load(open('model.pkl', 'rb'))
-print(y_predict)
+# pickle.dump(ET_Model, open('model.pkl', 'wb'))
+# model = pickle.load(open('model.pkl', 'rb'))
+# print(y_predict)
