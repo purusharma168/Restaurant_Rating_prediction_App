@@ -5,6 +5,9 @@ Deployment link:
 ```
 Docker image:docker pull purush9711/python-circleci-docker
 ```
+```
+model.pkl file link: https://drive.google.com/file/d/1G6sMqF8BePz51P1Zsbcjmzw49DZlWTU6/view?usp=sharing
+```
 ## Create a file "Dockerfile" with below content
 
 ```
